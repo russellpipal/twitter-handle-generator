@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Mongo Stuff</title>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/client.min.js"></script>
+  </head>
+  <body ng-controller="randomController">
+    <div ng-repeat="randomHandle in randomHandles">
+      <a ng-href="http://twitter.com/{{ randomHandle }}">{{ randomHandle }}'s Twitter Page</a>
+    </div>
+  </body>
+</html>
